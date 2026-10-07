@@ -1,0 +1,5 @@
+aiogram>=3.22,<4
+opencv-python-headless>=4.10
+numpy>=2.0
+qrcode[pil]>=8.2
+python-dotenv>=1.1
