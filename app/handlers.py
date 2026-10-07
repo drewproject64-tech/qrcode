@@ -16,7 +16,7 @@ from .storage import get_state, update_state
 router = Router()
 
 HELP_TEXT = (
-    f"🔳 <b>{BOT_NAME}</b>\n\n"
+    f"<b>{BOT_NAME}</b>\n\n"
     "Scan QR codes from images or create a new QR code from text or a URL.\n\n"
     "Choose a function below:"
 )
@@ -107,7 +107,7 @@ async def scan_non_photo(message: Message) -> None:
 async def create_callback(callback: CallbackQuery, state: FSMContext) -> None:
     await state.set_state(QRStates.waiting_create)
     await callback.message.edit_text(
-        "🔳 <b>Create QR Code</b>\n\nSend the text or URL you want to encode.",
+        "<b>Create QR Code</b>\n\nSend the text or URL you want to encode.",
         reply_markup=back_menu(),
     )
     await callback.answer()
