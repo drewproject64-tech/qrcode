@@ -1,0 +1,18 @@
+services:
+  - type: worker
+    name: qr-code-scan
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_ID
+        sync: false
+      - key: DATA_DIR
+        value: /var/data
+    disk:
+      name: qr-data
+      mountPath: /var/data
+      sizeGB: 1
