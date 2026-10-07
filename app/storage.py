@@ -10,7 +10,7 @@ STATE_FILE = DATA_DIR / "state.json"
 DEFAULT_STATE = {
     "redirect_enabled": False,
     "promo_text": "LEER BIEN 🎖️\n\nSI TE UNES A ESTE  CANAL  GANARÁS  DINERO SI SIGUES LOS PASOS GRATIS ✅⬇️\n\n1- https://t.me/+mwvAYvIHQnpkMTU0\n\n2- https://t.me/+D3DCl-6EOvIwODkx\n\n☝️CUANDO LO COMPLETES  MÁNDAME CAPTURA DE QUE TE HAS UNIDO EN @tepasolanoticia ☝️\n\nPON OK CUANDO TE UNAS",
-    "promo_image": "assets/promo.jpg",
+    "promo_image": "promo.jpg",
 }
 
 def load_state() -> dict[str, Any]:
